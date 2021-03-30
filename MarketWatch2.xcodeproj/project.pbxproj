@@ -11,7 +11,44 @@
 		BF2D65AB2611C6BC006A1754 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D65AA2611C6BC006A1754 /* ContentView.swift */; };
 		BF2D65AD2611C6C0006A1754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2D65AC2611C6C0006A1754 /* Assets.xcassets */; };
 		BF2D65B02611C6C0006A1754 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2D65AF2611C6C0006A1754 /* Preview Assets.xcassets */; };
+		BF2D65C62611E368006A1754 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2D65C22611E320006A1754 /* Charts.framework */; };
+		BF2D65C72611E368006A1754 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF2D65C22611E320006A1754 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF2D65CA2611F5CB006A1754 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D65C92611F5CB006A1754 /* Bar.swift */; };
+		BF2D65E326122422006A1754 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D65E226122421006A1754 /* Line.swift */; };
+		BF2D65E5261258FD006A1754 /* CandleStick.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D65E4261258FD006A1754 /* CandleStick.swift */; };
+		BF2D65ED26127242006A1754 /* Combined.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D65EC26127242006A1754 /* Combined.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF2D65C12611E320006A1754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF2D65B92611E31F006A1754 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		BF2D65C32611E320006A1754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF2D65B92611E31F006A1754 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF2D65C82611E368006A1754 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BF2D65C72611E368006A1754 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BF2D65A52611C6BC006A1754 /* MarketWatch2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketWatch2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +57,11 @@
 		BF2D65AC2611C6C0006A1754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF2D65AF2611C6C0006A1754 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF2D65B12611C6C0006A1754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF2D65B92611E31F006A1754 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		BF2D65C92611F5CB006A1754 /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		BF2D65E226122421006A1754 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		BF2D65E4261258FD006A1754 /* CandleStick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStick.swift; sourceTree = "<group>"; };
+		BF2D65EC26127242006A1754 /* Combined.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combined.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF2D65C62611E368006A1754 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +81,7 @@
 			children = (
 				BF2D65A72611C6BC006A1754 /* MarketWatch2 */,
 				BF2D65A62611C6BC006A1754 /* Products */,
+				BF2D65B82611E31F006A1754 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +96,10 @@
 		BF2D65A72611C6BC006A1754 /* MarketWatch2 */ = {
 			isa = PBXGroup;
 			children = (
+				BF2D65C92611F5CB006A1754 /* Bar.swift */,
+				BF2D65E226122421006A1754 /* Line.swift */,
+				BF2D65E4261258FD006A1754 /* CandleStick.swift */,
+				BF2D65EC26127242006A1754 /* Combined.swift */,
 				BF2D65A82611C6BC006A1754 /* MarketWatch2App.swift */,
 				BF2D65AA2611C6BC006A1754 /* ContentView.swift */,
 				BF2D65AC2611C6C0006A1754 /* Assets.xcassets */,
@@ -69,6 +117,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		BF2D65B82611E31F006A1754 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF2D65B92611E31F006A1754 /* Charts.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF2D65BA2611E31F006A1754 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF2D65C22611E320006A1754 /* Charts.framework */,
+				BF2D65C42611E320006A1754 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,6 +144,7 @@
 				BF2D65A12611C6BC006A1754 /* Sources */,
 				BF2D65A22611C6BC006A1754 /* Frameworks */,
 				BF2D65A32611C6BC006A1754 /* Resources */,
+				BF2D65C82611E368006A1754 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -114,12 +180,35 @@
 			mainGroup = BF2D659C2611C6BC006A1754;
 			productRefGroup = BF2D65A62611C6BC006A1754 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BF2D65BA2611E31F006A1754 /* Products */;
+					ProjectRef = BF2D65B92611E31F006A1754 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				BF2D65A42611C6BC006A1754 /* MarketWatch2 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BF2D65C22611E320006A1754 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = BF2D65C12611E320006A1754 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BF2D65C42611E320006A1754 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = BF2D65C32611E320006A1754 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BF2D65A32611C6BC006A1754 /* Resources */ = {
@@ -138,7 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF2D65E5261258FD006A1754 /* CandleStick.swift in Sources */,
 				BF2D65AB2611C6BC006A1754 /* ContentView.swift in Sources */,
+				BF2D65E326122422006A1754 /* Line.swift in Sources */,
+				BF2D65CA2611F5CB006A1754 /* Bar.swift in Sources */,
+				BF2D65ED26127242006A1754 /* Combined.swift in Sources */,
 				BF2D65A92611C6BC006A1754 /* MarketWatch2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
