@@ -11,6 +11,7 @@ import Charts
 
 struct Line: UIViewRepresentable {
     var entries : [ChartDataEntry]
+    var chartName = "My line chart"
     
     typealias UIViewType = LineChartView
     
@@ -22,13 +23,32 @@ struct Line: UIViewRepresentable {
     
     func updateUIView(_ uiView: LineChartView, context: Context) {
         uiView.data = addData()
+        // yoko added
+        uiView.legend.enabled = false
+        //uiView.drawGridBackgroundEnabled = false
+        uiView.xAxis.drawLabelsEnabled = false
+        uiView.xAxis.drawAxisLineEnabled = false
+        uiView.xAxis.drawGridLinesEnabled = false
+        uiView.leftAxis.drawLabelsEnabled = false
+        //uiView.leftAxis.drawGridLinesEnabled = false
+        uiView.leftAxis.drawAxisLineEnabled = false
+        uiView.rightAxis.drawLabelsEnabled = false
+        uiView.rightAxis.drawAxisLineEnabled = false
+        uiView.rightAxis.drawGridLinesEnabled = false
+        // yoko end
     }
     
     func addData() -> LineChartData {
         let data = LineChartData()
         let dataSet = LineChartDataSet(entries: entries)
         dataSet.colors = [NSUIColor.green]
-        dataSet.label = "My line data"
+        dataSet.label = chartName
+        // added by yoko
+        dataSet.drawCirclesEnabled = false
+        dataSet.drawValuesEnabled = false
+        dataSet.drawVerticalHighlightIndicatorEnabled = false
+        dataSet.drawHorizontalHighlightIndicatorEnabled = false
+        // added end
         data.append(dataSet)
         return data
     }
