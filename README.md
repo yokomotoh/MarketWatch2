@@ -3,5 +3,5 @@
 Follow the green market!
 App for iPhone
 
-![Alt Text](/images/simulator1.png){:height="50%" width="50%"}
-![Alt Text](/images/simulator2.png){:height="50%" width="50%"}
+<img src = "/images/simulator1.png" width="200">
+<img src = "/images/simulator2.png" width="200">
