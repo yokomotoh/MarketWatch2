@@ -47,6 +47,8 @@
 		BF6EA78626149AEC00E39227 /* YyyymmddAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EA78526149AEC00E39227 /* YyyymmddAxisValueFormatter.swift */; };
 		BF82040A261F04AB004BDFFF /* simulator1.png in Resources */ = {isa = PBXBuildFile; fileRef = BF820408261F04AB004BDFFF /* simulator1.png */; };
 		BF82040B261F04AB004BDFFF /* simulator2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF820409261F04AB004BDFFF /* simulator2.png */; };
+		BFAACF6F2687B76A000F8B0F /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFAACF6E2687B76A000F8B0F /* keys.plist */; };
+		BFAACF7A2687CA36000F8B0F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BFAACF792687CA36000F8B0F /* .gitignore */; };
 		BFB8F2AC2613BED2009AEF73 /* LineDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB8F2AB2613BED2009AEF73 /* LineDetail.swift */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +125,8 @@
 		BF6EA78526149AEC00E39227 /* YyyymmddAxisValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YyyymmddAxisValueFormatter.swift; sourceTree = "<group>"; };
 		BF820408261F04AB004BDFFF /* simulator1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = simulator1.png; sourceTree = "<group>"; };
 		BF820409261F04AB004BDFFF /* simulator2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = simulator2.png; sourceTree = "<group>"; };
+		BFAACF6E2687B76A000F8B0F /* keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
+		BFAACF792687CA36000F8B0F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		BFB8F2AB2613BED2009AEF73 /* LineDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +145,7 @@
 		BF2D659C2611C6BC006A1754 = {
 			isa = PBXGroup;
 			children = (
+				BFAACF792687CA36000F8B0F /* .gitignore */,
 				BF820405261F0445004BDFFF /* images */,
 				BF2D65A72611C6BC006A1754 /* MarketWatch2 */,
 				BF2D65A62611C6BC006A1754 /* Products */,
@@ -210,6 +215,7 @@
 				BF2D660426135AB8006A1754 /* ViewJSON */,
 				BF2D660826135AB8006A1754 /* json */,
 				BF2D661626135AB8006A1754 /* Model */,
+				BFAACF6E2687B76A000F8B0F /* keys.plist */,
 			);
 			path = Market;
 			sourceTree = "<group>";
@@ -376,8 +382,10 @@
 				BF2D663126135ABB006A1754 /* NUBD2021-03-22.json in Resources */,
 				BF2D662B26135ABB006A1754 /* PBW2021-03-22.json in Resources */,
 				BF2D65B02611C6C0006A1754 /* Preview Assets.xcassets in Resources */,
+				BFAACF6F2687B76A000F8B0F /* keys.plist in Resources */,
 				BF2D662A26135ABB006A1754 /* IBM2021-03-22.json in Resources */,
 				BF2D65AD2611C6C0006A1754 /* Assets.xcassets in Resources */,
+				BFAACF7A2687CA36000F8B0F /* .gitignore in Resources */,
 				BF2D662E26135ABB006A1754 /* IQQH.DE2021-03-22.json in Resources */,
 				BF2D662826135ABB006A1754 /* MGGAX2021-03-22.json in Resources */,
 				BF2D662626135ABB006A1754 /* AAPL2021-03-22.json in Resources */,

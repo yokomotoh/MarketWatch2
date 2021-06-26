@@ -24,7 +24,7 @@ struct MarketDetail: View {
         switch(item) {
         case "AAPL": return stockAAPL
         case "IBM": return stockIBM
-        //case "MSFT": return stockMSFT
+        case "MSFT": return stockMSFT
         default:
             return Stocks(stockSymbol: "")
         }

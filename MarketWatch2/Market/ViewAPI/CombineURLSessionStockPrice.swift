@@ -22,8 +22,8 @@ class Stocks : ObservableObject {
     
     private var stockFunction = "TIME_SERIES_DAILY"
     var stockSymbol = ""
-    private var apiKey = "2OZPW2NW0AT07VNL"
     /*
+    private var apiKey = "2OZPW2NW0AT07VNL"
     var urlBase = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&apikey=2OZPW2NW0AT07VNL&datatype=json"
     */
     
@@ -33,14 +33,28 @@ class Stocks : ObservableObject {
         self.stockSymbol = stockSymbol
         fetchStockPrice()
     }
+  
+    private var apiKey: String {
+      get {
+        // 1
+        guard let filePath = Bundle.main.path(forResource: "keys", ofType: "plist") else {
+          fatalError("Couldn't find file 'keys.plist'.")
+        }
+        // 2
+        let plist = NSDictionary(contentsOfFile: filePath)
+        guard let value = plist?.object(forKey: "apiKey") as? String else {
+          fatalError("Couldn't find key 'apiKey' in 'keys.plist'.")
+        }
+        return value
+      }
+    }
     
     func fetchStockPrice(){
         
         let urlBase =
-            "http://localhost:8888/test/green4all/IBMStockData.json"
-            //"https://www.alphavantage.co/query?function=\(stockFunction)&symbol=\(stockSymbol)&apikey=\(apiKey)&datatype=json"
+            "https://www.alphavantage.co/query?function=\(stockFunction)&symbol=\(stockSymbol)&apikey=\(apiKey)&datatype=json"
         
-        //print(urlBase)
+        print(urlBase)
 
         URLSession.shared.dataTaskPublisher(for: URL(string: "\(urlBase)")!)
             .map{output in
