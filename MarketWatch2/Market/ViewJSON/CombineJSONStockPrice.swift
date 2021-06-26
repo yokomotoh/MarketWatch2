@@ -29,9 +29,10 @@ class StockData : ObservableObject {
     
     private var stockFunction = "TIME_SERIES_DAILY"
     var stockSymbol = ""
-    private var apiKey = "2OZPW2NW0AT07VNL"
     /*
-    var urlBase = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&apikey=2OZPW2NW0AT07VNL&datatype=json"
+    private var apiKey = "MyApiKey"
+    
+    var urlBase = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&apikey=MyApiKey&datatype=json"
     */
     
     var cancellable : Set<AnyCancellable> = Set()
